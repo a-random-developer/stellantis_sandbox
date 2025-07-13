@@ -1,0 +1,105 @@
+:root{
+
+    /* Primary colors */
+    --accent-color:#002a68;
+    --accent-color-light:#243783;
+    --border-color:#7ad9d0;
+    --stroke-color:#b9bcc3;
+    --hint-color:#a0a4aa;
+
+
+    /* measures */
+    --padding:8px;
+    --padding-large:24px;
+    --padding-small:4px;
+    --margin:8px;
+    --gap:20px;
+    --radius:20px;
+    --radius-small:4px;
+
+    /* Image and logos */
+    --logo-width:180px;
+    --brand-logo-width:100px;
+    --border-width:2px;
+}
+.container{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.brand-logo{
+    width: var(--brand-logo-width);
+}
+
+
+.hero-section{
+    text-align: center;
+    background-image: url('https://www.shutterstock.com/image-photo/puerto-mexico-october-29-2017-600nw-1897196860.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    padding: var(--padding-large);
+    text-shadow: 10px 10px 10px black;
+}
+
+.decorator{
+    background-color: var(--accent-color);
+    color: white;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 2px;
+    line-height: 1.8;
+    color: color-mix(in srgb, var(--hint-color)50%,black 50%);
+     margin: 2px;
+}
+
+.stroke{
+    width: 100%;
+    height: 1px;
+    background-color: var(--stroke-color);
+}
+.select{
+    border: 1px solid var(--hint-color);
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+button{
+    width: 100%;
+}
+
+
+.content{
+    display: hidden;
+}
+
+
+svg{
+    width: 18px;
+    fill: var(--accent-color);
+}
+
+
+.co-buyer-btn{
+    color: var(--accent-color);
+    border-width: 2px;
+    background-color: transparent;
+    border-radius: 20px;
+    
+}
+
+.blue-color{
+    color: var(--accent-color);
+}
+
+.range-holder{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
