@@ -213,6 +213,23 @@ const getIP = () => {
 }
 
 
+
+const checkSession=()=>{
+  console.log("Checking session:",window.location.search);
+  
+  const params=new URLSearchParams(window.location.search);
+  console.log("Params");
+  const sessionTime=parseInt(params.get('session'));
+  const SESSION_LIMIT=20*1000
+  const NOW=Date.now()
+  if(NOW-sessionTime>SESSION_LIMIT){
+    document.body.innerHTML="Link expired please authorize again"
+    setTimeout(()=>{
+      window.location.replace("https://a-random-developer.github.io/ip_gateway_test/")
+    },2000);
+  }
+}
+
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = function(e) {
@@ -225,6 +242,8 @@ document.onkeydown = function(e) {
     }
   };
 
+
+checkSession();
 getIP();
 loadListsInFooter();
 loadDropdows()
